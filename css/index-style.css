@@ -20,7 +20,7 @@ h3 {
 
 h2::before,
 h2::after {
-    content: "\x1F4D6 ";
+    content: "\#x1F4D6 ";
 }
 
 nav li {
@@ -40,5 +40,5 @@ header {
 
 nav li::before
 nav li::after {
-    content: "\x1f4d6"
+    content: "\#x1f4d6"
 }
