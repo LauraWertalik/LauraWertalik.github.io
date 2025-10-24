@@ -14,10 +14,11 @@ h3 {
     color: rgb(176, 206, 136);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 
     'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-decoration: wavy;
+    text-decoration: underline wavy rgba(255, 253, 143, .8) 4px;
+    text-underline-offset: 4px;
 }
 
-h2::before
+h2::before,
 h2::after {
     content: "\x1F4D6 ";
 }
@@ -28,10 +29,16 @@ nav li {
     font-weight: 700;
     letter-spacing: 1.25px;
     list-style-type: lower-latin;
+    text-transform: lowercase;
 
 }
 
 nav,
 header {
     text-align: center;
+}
+
+nav li::before
+nav li::after {
+    content: "\x1f4d6"
 }
