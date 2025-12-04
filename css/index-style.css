@@ -4,23 +4,23 @@ html {
     font-size: 1.5rem;
     font-style: oblique;
     line-height: 1.25rem;
-    color: #4C763B;
+    color: #4c763b;
 }
 
-h1,
+h1
 h2,
 h3 {
     font-weight: 300;
-    color: rgb(176, 206, 136);
+    color: rgb(76, 118, 59);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 
     'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-decoration: underline wavy rgba(255, 253, 143, .8) 4px;
+    text-decoration: underline wavy rgba(221, 226, 180, 0.8) 4px;
     text-underline-offset: 4px;
 }
 
 h2::before,
 h2::after {
-    content: "\x1F4D6 ";
+    content: "/1F4D6 ";
 }
 
 nav li {
@@ -40,5 +40,5 @@ header {
 
 nav li::before
 nav li::after {
-    content: "\x1f4d6"
+    content: "/1f4d6 ";
 }
