@@ -7,7 +7,7 @@ html {
     color: #4c763b;
 }
 
-h1
+h1 
 h2,
 h3 {
     font-weight: 300;
@@ -18,9 +18,53 @@ h3 {
     text-underline-offset: 4px;
 }
 
+h1 {
+    font-size: 2.25rem;
+    opacity: 0%
+}
+
+.fade-text {
+    animation: fadeTxt linear 7s 14s;
+    animation-fill-mode: forwards; /*Makes it stay after animation*/
+}
+
+@keyframes fadeTxt {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        font-size: 2.75rem;
+    }
+    100% {
+        opacity: 1;
+        font-size: 3.25rem;
+    }
+}
+
+h2 {
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
 h2::before,
 h2::after {
-    content: "/1F4D6 ";
+    content:"\1f4d6 ";
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+nav {
+    float:right;
+    position: sticky;
+    top: 0;
+    background-color: antiquewhite;
+    width: 240px;
+}
+
+nav ul {
+    padding: 0;
 }
 
 nav li {
@@ -38,7 +82,94 @@ header {
     text-align: center;
 }
 
-nav li::before
-nav li::after {
-    content: "/1f4d6 ";
+nav a,
+.assignments a,
+footer a {
+    text-decoration: none;
+    color: cadetblue;
+}
+
+nav a:link,
+nav a:visited {
+    line-height: 1.5;
+}
+
+nav a:hover,
+nav a:active {
+    text-decoration: underline wavy rgba(221, 226, 180, 0.8) 2px;
+    text-underline-offset: 6px;
+    color: rgb(17, 75, 17);
+}
+
+nav a:hover::before {
+   content:"\1f4d6 ";
+}
+
+header p {
+    font-size: 80%;
+}
+
+.fade-img {
+    animation: fadeImg ease 14s;
+    animation-fill-mode: forwards; /*makes it stay after animation */
+}
+@keyframes fadeImg {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        border-radius: 50%;
+        border: solid  #4c763b 8px;
+    }
+}
+
+main,
+header {
+    width: 60%;
+    margin: 0 auto;
+    line-height: 1.4;
+}
+
+.assignments li {
+    list-style-type: none;
+}
+
+.assignments li::before {
+     content:"\1f4d6 ";
+     font-size: 1.6rem;
+}
+
+.assignments a:link,
+.assingments a:visited {
+    line-height: 1.6;
+}
+
+.assingments a:hover,
+.assignments a:active {
+    text-decoration: underline double  rgba(221, 226, 180, 0.8) 2px;
+    text-underline-offset: 4px;
+}
+
+
+footer {
+    line-height: 80%;
+    font-weight: 500;
+    /*position: relative;*/
+}
+
+
+small {
+    float: left;
+    padding: 20px 0 40px 0;
+}
+
+
+/*
+
+small {
+    position: absolute;
+    bottom: -100px;
+    right: 0;
+    padding: 30px 0;
 }
