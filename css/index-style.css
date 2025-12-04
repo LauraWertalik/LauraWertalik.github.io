@@ -24,8 +24,8 @@ h1 {
 }
 
 .fade-text {
-    animation: fadeTxt linear 7s 14s;
-    animation-fill-mode: forwards; /*Makes it stay after animation*/
+    animation: fadeTxt linear 5s 10s;
+    animation-fill-mode: forwards; /*Stays after animation*/
 }
 
 @keyframes fadeTxt {
@@ -56,7 +56,7 @@ h3 {
 }
 
 nav {
-    float:right;
+    float:left;
     position: sticky;
     top: 0;
     background-color: antiquewhite;
@@ -110,7 +110,7 @@ header p {
 }
 
 .fade-img {
-    animation: fadeImg ease 14s;
+    animation: fadeImg ease-in 10s;
     animation-fill-mode: forwards; /*makes it stay after animation */
 }
 @keyframes fadeImg {
