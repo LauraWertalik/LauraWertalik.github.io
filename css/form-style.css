@@ -44,6 +44,32 @@ nav a {
     margin-right: 8px;
 }
 
+nav,
+header {
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: cadetblue;
+}
+
+nav a:link,
+nav a:visited {
+    line-height: 1.5;
+}
+
+nav a:hover,
+nav a:active {
+    text-decoration: underline wavy rgba(221, 226, 180, 0.8) 2px;
+    text-underline-offset: 6px;
+    color: rgb(17, 75, 17);
+}
+
+nav a:hover::before {
+   content:"\1f3e0 ";
+}
+
 policies {
     margin-bottom: 2rem;
 }
